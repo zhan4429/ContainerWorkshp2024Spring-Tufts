@@ -28,7 +28,7 @@ In November 2021, the Singularity project joined the Linux Foundation, and renam
 
 ## Hands-on
 - [Load singularity/apptainer modules](hands-on/load_modules.md)
-
+- [Pull and run containers](hands-on/pull_run.md)
 
 
 ## Practice singularity on RCAC HPC clusters  
