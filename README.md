@@ -26,12 +26,9 @@ In November 2021, the Singularity project joined the Linux Foundation, and renam
 
 
 
-## Singularity/apptainer basics 
-Detailed singularity user guide is available at: [sylabs.io/guides/3.8/user-guide](https://sylabs.io/guides/3.8/user-guide/).  
-The main singularity command:  
-```
-$ singularity [options] <subcommand> [subcommand options …]
-```
+## Hands-on
+- [Load singularity/apptainer modules](hands-on/load_modules.md)
+
 
 
 ## Practice singularity on RCAC HPC clusters  
