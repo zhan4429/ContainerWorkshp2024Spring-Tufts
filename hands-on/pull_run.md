@@ -21,4 +21,8 @@ docker pull quay.io/biocontainers/blast:<tag>
 
 You can find the tags by clicking `container` on top of the page as illutrated in the below figure. 
 
-![Biocontainer tags](images/blast1.png)
+![Biocontainer containers](../images/blast1.png)
+
+There are different tags for each version and multiple containers/tags even exist for the same application version. It is common practice to select the ones that were last modified.
+
+![Biocontainer tags](../images/blast2.png)
