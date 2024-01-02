@@ -1,9 +1,4 @@
----
-Title: Mastering Reproducibility: pulling, running and building containerized HPC applications
-Author: Yucheng Zhang
-Institute: Research Technology, Tufts University
-Date: 01/24/2024
----
+# Mastering Reproducibility: pulling, running and building containerized HPC applications
 
 ## What is container?  
 - A **container** is an abstraction for a set of technologies that aim to solve the problem of how to get software to run reliably when moved from one computing environment to another.  
