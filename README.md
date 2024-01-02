@@ -28,25 +28,8 @@ In November 2021, the Singularity project joined the Linux Foundation, and renam
 
 ## Hands-on
 - [Load singularity/apptainer modules](hands-on/load_modules.md)
-- [Pull and run containers](hands-on/pull_run.md)
-
-
-## Practice singularity on RCAC HPC clusters  
-### Login to a cluster  
-```
-$ ssh USERID@CLUSTER.rcac.purdue.edu   # You can login to any Purdue cluster you have access to
-
-$ cd $RCAC_SCRATCH                     # We will practice in our scratch directory
-```
-
-### Get a copy of git repository  
-```
-$ git clone https://github.com/zhan4429/Container101_2021.git
-$ cd Container101_2021
-$ ls
-  Container101_turtorial.md  Inputs  README.md
-```
-I created a [git respository](https://github.com/zhan4429/Container101_2021.git) that contains the practice materials. After you `git clone` the git repository, you can find that in your current directory, there is a folder named `Container101_2021`. Inside this folder, you will find the folder `Inputs` that contains all input files will be used in the following practice.   
+- [Pull container images](hands-on/pull_run.md)
+- [Run containers](hands-on/run.md)
 
 ### singularity pull  
 Download or build a container from a given URI. 
