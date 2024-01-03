@@ -7,3 +7,9 @@ Download or build a container from a given URI.
 singularity/apptainer exec [options] image command
 ```
 
+After we pulled images from public registries onto the cluster, we can use them to run analysis. If you haven't pulled images, please follow the guideline in the [Pull container images](hands-on/pull_run.md).
+#### blast
+##### syntax
+```
+blastn –db nt –query nt.fsa –out results.out  
+```

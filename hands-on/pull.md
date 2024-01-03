@@ -1,4 +1,4 @@
-## Singularity/apptainer pull
+## singularity/apptainer pull
 ### Syntax
 Download or build a container from a given URI. 
 ```
@@ -53,3 +53,40 @@ If you want to use PyTorch, simply pull the [official container image](https://h
 singularity pull docker://pytorch/pytorch:2.1.2-cuda11.8-cudnn8-runtime
 ```
 
+## singularity/apptainer shell
+
+## syntax
+```
+$ singularity/apptainer shell image.sif
+```
+
+Let's go inside the pulled `blast` container.  
+
+```
+$ singularity shell bowtie2_v2_4_1.sif 
+Singularity> more /etc/os-release 
+PRETTY_NAME="Debian GNU/Linux 12 (bookworm)"
+NAME="Debian GNU/Linux"
+VERSION_ID="12"
+VERSION="12 (bookworm)"
+VERSION_CODENAME=bookworm
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+
+Singularity> which blastp
+/usr/local/bin/blastp
+
+Singularity> ls /
+apps         boot         dev          etc          lib          linuxrc      mnt          proc         run          scratch      srv          tmp          var
+bin          depot        environment  home         lib64        media        opt          root         sbin         singularity  sys          usr
+```
+From `ls /`, we can see that Singularity automatically binds `apps`, `depot`, `home`, `scratch`, `tmp` into the container.   
+
+
+Exit from the container shell when done inspecting
+```
+Singularity> exit
+$                          # back to your regular shell prompt
+```
